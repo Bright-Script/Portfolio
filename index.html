@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Brighton Junior — front-end developer building fast, accessible interfaces.">
+<title>Brighton Junior — Front-End Developer</title>
+
+<link rel="icon" href="favicon.ico">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style/style.css">
+<link rel="stylesheet" href="style/layout.css">
+<link rel="stylesheet" href="style/components.css">
+<link rel="stylesheet" href="style/responsive.css">
+</head>
+<body>
+<header>
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div id="mini-logo">
+    <span></span>
+    <h3>Brighton Junior</h3>
+  </div>
+
+
+  <nav>
+    <a href="index.html" class="active">Home</a>
+    <a href="pages/about.html">About</a>
+    <a href="pages/projects.html">Projects</a>
+    <a href="pages/services.html">Services</a>
+    <a href="pages/contact.html">Contact</a>
+  </nav>
+
+  <div class="call-to-action">
+    <a href="mailto:brighton.junior.ofc@gmail.com" class="call-mail">Send Mail</a>
+    <a href="pages/projects.html" class="call-projects">View Projects</a>
+  </div>
+</header>
+
+<main>
+  <section class="hero container">
+    <p class="hero-eyebrow">Available for freelance work</p>
+    <h1>I design and build <span class="gradient">interfaces that feel effortless.</span></h1>
+    <p class="hero-sub">Front-end developer focused on clean component systems, performant pages, and details that make a site feel considered rather than assembled.</p>
+    <div class="hero-actions">
+      <a href="pages/projects.html" class="btn btn-primary">View my work</a>
+      <a href="pages/contact.html" class="btn btn-secondary">Start a project</a>
+    </div>
+    <dl class="hero-stats">
+      <div>
+        <dt>4+</dt>
+        <dd>Years building for the web</dd>
+      </div>
+      <div>
+        <dt>30+</dt>
+        <dd>Projects shipped</dd>
+      </div>
+      <div>
+        <dt>12</dt>
+        <dd>Long-term clients</dd>
+      </div>
+    </dl>
+  </section>
+
+  <section class="container">
+    <div class="section-head">
+      <span class="eyebrow">Featured work</span>
+      <h2>A few recent projects</h2>
+      <p>Selected work spanning marketing sites, dashboards, and small product builds.</p>
+    </div>
+    <div class="grid grid-3">
+
+      <article class="card project-card">
+        <div class="thumb">Nimbus Dashboard</div>
+        <h3>Nimbus Analytics Dashboard</h3>
+        <p>A real-time metrics dashboard with custom charting and role-based views.</p>
+        <div class="tag-row">
+          <span class="tag">React</span>
+          <span class="tag">D3.js</span>
+        </div>
+        <a href="pages/projects.html" class="card-link">View project</a>
+      </article>
+
+      <article class="card project-card">
+        <div class="thumb">Ferry &amp; Co.</div>
+        <h3>Ferry &amp; Co. Marketing Site</h3>
+        <p>A conversion-focused marketing site with a CMS-driven blog and case studies.</p>
+        <div class="tag-row">
+          <span class="tag">HTML/CSS</span>
+          <span class="tag">Vanilla JS</span>
+        </div>
+        <a href="pages/projects.html" class="card-link">View project</a>
+      </article>
+
+      <article class="card project-card">
+        <div class="thumb">Loop Habit App</div>
+        <h3>Loop Habit Tracker</h3>
+        <p>A lightweight habit tracker PWA with offline support and local-first sync.</p>
+        <div class="tag-row">
+          <span class="tag">JavaScript</span>
+          <span class="tag">PWA</span>
+        </div>
+        <a href="pages/projects.html" class="card-link">View project</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="container">
+    <div class="section-head">
+      <span class="eyebrow">How I can help</span>
+      <h2>Services</h2>
+      <p>From a first landing page to an ongoing front-end partnership.</p>
+    </div>
+    <div class="grid grid-3">
+      <article class="card service-card">
+        <h3>Website Design</h3>
+        <p>A distinct visual direction, not a template — built around your content.</p>
+      </article>
+      <article class="card service-card">
+        <h3>Front-End Development</h3>
+        <p>Accessible, responsive builds from a design file or from scratch.</p>
+      </article>
+      <article class="card service-card">
+        <h3>Maintenance &amp; Support</h3>
+        <p>Ongoing updates, fixes, and small features after launch.</p>
+      </article>
+    </div>
+    <a href="pages/services.html" class="card-link">See all services</a>
+  </section>
+
+  <section class="container">
+    <div class="section-head">
+      <span class="eyebrow">Toolkit</span>
+      <h2>Core skills</h2>
+    </div>
+    <div class="grid grid-2">
+      <div>
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>HTML &amp; CSS</span><span>70%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-level="70"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>JavaScript</span><span>65%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-level="65"></div></div>
+        </div>
+      </div>
+      <div>
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>React</span><span>42%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-level="42"></div></div>
+        </div>
+        <div class="skill-bar">
+          <div class="skill-bar-head"><span>Accessibility</span><span>80%</span></div>
+          <div class="skill-bar-track"><div class="skill-bar-fill" data-level="80"></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <div id="mini-logo">
+        <span>&amp;</span>
+        <h3>Brighton Junior</h3>
+      </div>
+      <p style="margin-top: 1rem; max-width: 32ch; font-size: 0.9rem;">Front-end developer building interfaces that are fast, accessible, and considered.</p>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="pages/about.html">About</a></li>
+        <li><a href="pages/projects.html">Projects</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>More</h4>
+      <ul>
+        <li><a href="pages/services.html">Services</a></li>
+        <li><a href="pages/contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="mailto:brighton.junior.ofc@gmail.com">Email</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://linkedin.com/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; <span data-year>2026</span> Brighton Junior. All rights reserved.</p>
+</footer>
+
+<script src="script/navigation.js"></script>
+<script src="script/main.js"></script>
+</body>
+</html>

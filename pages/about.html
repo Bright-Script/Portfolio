@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="About Brighton Junior — front-end developer.">
+<title>About — Brighton Junior</title>
+
+<link rel="icon" href="../favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../style/style.css">
+<link rel="stylesheet" href="../style/layout.css">
+<link rel="stylesheet" href="../style/components.css">
+<link rel="stylesheet" href="../style/responsive.css">
+</head>
+<body>
+<header>
+  <div id="mini-logo">
+    <span>&amp;</span>
+    <h3>Brighton Junior</h3>
+  </div>
+
+  <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="about.html" class="active">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <div class="call-to-action">
+    <a href="mailto:brighton.junior.ofc@gmail.com" class="call-mail">Send Mail</a>
+    <a href="projects.html" class="call-projects">View Projects</a>
+  </div>
+</header>
+
+<main>
+  <section class="page-intro container">
+    <span class="eyebrow">About</span>
+    <h1>The person behind the pixels.</h1>
+    <p class="hero-sub" style="margin-top: 1rem;">I'm Brighton — a front-end developer who cares as much about how a site feels to use as how it looks in a screenshot.</p>
+  </section>
+
+  <section class="container about-layout">
+    <div>
+      <div class="card">
+        <h3>Quick facts</h3>
+        <ul style="list-style: none; margin-top: 1rem; display: grid; gap: 10px; font-size: 0.9rem;">
+          <li><strong style="color: var(--color-text);">Based in:</strong> Nairobi, Kenya</li>
+          <li><strong style="color: var(--color-text);">Focus:</strong> Front-end development, UI systems</li>
+          <li><strong style="color: var(--color-text);">Currently:</strong> Open to freelance projects</li>
+          <li><strong style="color: var(--color-text);">Outside of code:</strong> Design, photography, coffee</li>
+        </ul>
+      </div>
+    </div>
+
+    <div>
+      <p>I got into web development by rebuilding my own portfolio over and over until I understood why the good ones felt good. That habit never really stopped — every project is still a chance to get one detail closer to right, whether that's a transition curve, a line height, or how a form explains what went wrong.</p>
+      <p style="margin-top: 1rem;">These days I split my time between client front-end work and small products of my own, usually somewhere in the overlap of design and code.</p>
+
+      <h2 style="margin-top: 2.5rem; font-size: 1.3rem;">Experience</h2>
+      <div class="timeline" style="margin-top: 1.5rem;">
+        <div class="timeline-item">
+          <p class="period">2024 — Present</p>
+          <h3>Freelance Front-End Developer</h3>
+          <p>Building marketing sites, dashboards, and small products for independent clients.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="period">2022 — 2024</p>
+          <h3>Front-End Developer, Studio Contract</h3>
+          <p>Shipped responsive builds from design handoff for a small web studio's client roster.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="period">2021 — 2022</p>
+          <h3>Junior Developer</h3>
+          <p>First professional role — learned the fundamentals of production front-end work.</p>
+        </div>
+        <div class="timeline-item">
+          <p class="period">2020</p>
+          <h3>Started learning to code</h3>
+          <p>Self-taught, starting with HTML and CSS before moving into JavaScript.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div>
+      <div id="mini-logo">
+        <span>&amp;</span>
+        <h3>Brighton Junior</h3>
+      </div>
+      <p style="margin-top: 1rem; max-width: 32ch; font-size: 0.9rem;">Front-end developer building interfaces that are fast, accessible, and considered.</p>
+    </div>
+    <div>
+      <h4>Site</h4>
+      <ul>
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>More</h4>
+      <ul>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Connect</h4>
+      <ul>
+        <li><a href="mailto:brighton.junior.ofc@gmail.com">Email</a></li>
+        <li><a href="https://github.com/">GitHub</a></li>
+        <li><a href="https://linkedin.com/">LinkedIn</a></li>
+      </ul>
+    </div>
+  </div>
+  <p class="footer-bottom">&copy; <span data-year>2026</span> Brighton Junior. All rights reserved.</p>
+</footer>
+
+<script src="../script/navigation.js"></script>
+<script src="../script/main.js"></script>
+</body>
+</html>

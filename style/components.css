@@ -1,0 +1,303 @@
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 22px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  cursor: pointer;
+  transition: transform var(--transition-fast), box-shadow var(--transition-fast), border-color var(--transition-fast);
+}
+
+.btn-primary {
+  color: var(--color-text);
+  background: var(--gradient-blue-purple);
+  box-shadow: var(--glow-purple);
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--glow-purple), var(--shadow-md);
+}
+
+.btn-secondary {
+  color: var(--color-text);
+  background: transparent;
+  border-color: var(--color-border);
+}
+
+.btn-secondary:hover {
+  border-color: var(--color-border-active);
+  background: var(--color-surface-light);
+}
+
+/* Cards */
+.card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-lg);
+  transition: transform var(--transition-fast), border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-border-active);
+  box-shadow: var(--shadow-md);
+}
+
+.card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 8px;
+}
+
+.card p {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+}
+
+/* Project card */
+.project-card .thumb {
+  aspect-ratio: 16 / 10;
+  border-radius: var(--radius-md);
+  margin-bottom: var(--spacing-md);
+  background: var(--gradient-brand);
+  background-size: 220% 220%;
+  display: grid;
+  place-items: center;
+  color: rgba(255, 255, 255, 0.85);
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: var(--spacing-sm);
+}
+
+.tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--color-text-secondary);
+  background: var(--color-surface-light);
+  border: 1px solid var(--color-border);
+  padding: 4px 10px;
+  border-radius: var(--radius-full);
+}
+
+.card-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: var(--spacing-md);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--color-text);
+}
+
+.card-link::after {
+  content: "\2192";
+  transition: transform var(--transition-fast);
+}
+
+.card-link:hover::after {
+  transform: translateX(3px);
+}
+
+/* Service card numbering (real sequence: order of engagement) */
+.service-card .step {
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--spacing-sm);
+}
+
+.service-card ul {
+  list-style: none;
+  margin-top: var(--spacing-md);
+  display: grid;
+  gap: 6px;
+  font-size: 0.85rem;
+}
+
+.service-card li::before {
+  content: "\2713";
+  color: var(--color-orange);
+  margin-right: 8px;
+}
+
+/* Timeline (about page — chronological history) */
+.timeline {
+  display: grid;
+  gap: 0;
+  border-left: 1px solid var(--color-border);
+  padding-left: var(--spacing-lg);
+}
+
+.timeline-item {
+  position: relative;
+  padding-bottom: var(--spacing-xl);
+}
+
+.timeline-item:last-child {
+  padding-bottom: 0;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--spacing-lg) * -1 - 5px);
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--gradient-blue-purple);
+  box-shadow: var(--glow-purple);
+}
+
+.timeline-item .period {
+  font-size: 0.78rem;
+  color: var(--color-text-muted);
+  margin-bottom: 4px;
+}
+
+.timeline-item h3 {
+  font-size: 1.05rem;
+  margin-bottom: 4px;
+}
+
+/* Skills */
+.skill-bar {
+  margin-bottom: var(--spacing-md);
+}
+
+.skill-bar-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  margin-bottom: 6px;
+  color: var(--color-text-secondary);
+}
+
+.skill-bar-track {
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--color-surface-light);
+  overflow: hidden;
+}
+
+.skill-bar-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--gradient-brand);
+}
+
+/* Form */
+.form {
+  display: grid;
+  gap: var(--spacing-md);
+  max-width: 560px;
+}
+
+.field {
+  display: grid;
+  gap: 6px;
+}
+
+.field label {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+}
+
+.field input,
+.field textarea {
+  font: inherit;
+  color: var(--color-text);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  transition: border-color var(--transition-fast);
+}
+
+.field input:focus,
+.field textarea:focus {
+  border-color: var(--color-border-active);
+}
+
+.field textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+.field-error {
+  font-size: 0.78rem;
+  color: var(--color-orange);
+  min-height: 1em;
+}
+
+.form-status {
+  font-size: 0.9rem;
+  padding: 10px 14px;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  display: none;
+}
+
+.form-status.visible {
+  display: block;
+}
+
+.form-status.success {
+  border-color: var(--color-blue);
+  color: var(--color-text);
+}
+
+.form-status.error {
+  border-color: var(--color-crimson);
+  color: var(--color-text);
+}
+
+/* Contact info list */
+.contact-info {
+  display: grid;
+  gap: var(--spacing-md);
+}
+
+.contact-info .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--spacing-sm);
+}
+
+/* 404 */
+.error-page {
+  min-height: 60vh;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  padding-block: var(--spacing-2xl);
+}
+
+.error-code {
+  font-family: var(--font-heading);
+  font-size: clamp(4rem, 16vw, 9rem);
+  font-weight: 700;
+  background: var(--gradient-brand);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shine 6s linear infinite;
+  line-height: 1;
+}
