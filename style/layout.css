@@ -43,9 +43,23 @@ section {
 
 /* Hero */
 .hero {
+  position: relative;
   padding-block: var(--spacing-2xl) var(--spacing-xl);
   display: grid;
   gap: var(--spacing-lg);
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -10;
+
+  background-color: #adadc3;
+  opacity: 0.2;
+  background-image:  radial-gradient(25% 25% at 25% 25%, #1f2140 99%, transparent 101%), radial-gradient(25% 25% at 25% 25%, #1f2140 99%, transparent 101%), radial-gradient(50% 50%, #adadc3 98%, transparent), repeating-conic-gradient(#adadc3 0 25%, #1f2140 0 50%);
+  background-position: 50px 50px, 0 0, 0 0, 25px 0;
+  background-size: 100px 100px, 100px 100px, 50px 50px, 100px 50px;
 }
 
 .hero-eyebrow {
